@@ -10,7 +10,7 @@ function my_theme_enqueue_styles() {
 
 
 function digid_head() {
-	?>
-		tag manager goes here
-	<?php
+	echo '<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />' . "\n";
 }
+
+add_action( 'wp_head', 'digid_head' );
